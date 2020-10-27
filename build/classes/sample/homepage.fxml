@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomepageController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="250.0" prefWidth="1280.0" style="-fx-background-color: #E45652;">
+         <children>
+            <ImageView fitHeight="188.0" fitWidth="126.0" layoutX="212.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="431.0" layoutY="68.0" prefHeight="120.0" prefWidth="620.0" text="THE VILLAGE PUBLIC MODEL SCHOOL &#10;SOOIANWALA" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <VBox layoutX="314.0" layoutY="325.0" prefHeight="372.0" prefWidth="693.0" spacing="50.0">
+         <children>
+            <HBox prefHeight="165.0" prefWidth="691.0" spacing="103.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#addStudent" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: #E45652;" text="Add New" textAlignment="CENTER">
+                      <font>
+                          <Font size="23.0" />
+                      </font>
+                      <graphic>
+                          <ImageView fitHeight="84.0" fitWidth="107.0" layoutX="126.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@images/add-new-user.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+                  </Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#students" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: #E45652;" text="Students" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="107.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/student.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: #E45652;" text="Course">
+                     <graphic>
+                        <ImageView fitHeight="103.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/open-book.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="165.0" prefWidth="691.0" spacing="103.0">
+               <children>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#update" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: #E45652;" text="Update">
+                     <graphic>
+                        <ImageView fitHeight="105.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/refresh-button-with-users-inside.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#delete" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: #E45652;" text="Delete" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="91.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/trash-can.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#exit" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: #E45652;" text="Exit" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="98.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/power-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
